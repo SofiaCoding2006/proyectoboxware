@@ -20,35 +20,30 @@
 
 </head>
 <body>
-
-<!-- Main Container -->
-<div class="d-flex">
-    <!-- Sidebar -->
-    <div class="sidebar d-flex flex-column">
-        <div class="d-flex align-items-center justify-content-center mb-3">
-            <img src="/Frontend/public/BoxWare (4).png" alt="Logo" style="width: 120px; height: auto;">
-            <div class="admin">
-                <span class="ml-2">Administrador</span>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar d-flex flex-column">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+                <img src="/Frontend/public/BoxWare (4).png" alt="Logo" style="width: 120px; height: auto;">
+                <div class="admin">
+                    <span class="ml-2">Administrador</span>
+                </div>
+                <div class="linea1"></div>
             </div>
-            <div class="linea1"></div>
-        </div>
-        <a href="#"class="text-black bi bi-people icono-grande mr-2 text-decoration-none"></i>Usuarios</a> <!-- span para el espacion entre icono y texto-->
-        <a href="#"class="text-black bi bi-box-seam icono-grande mr-2 text-decoration-none"></i>Elementos</a>
-        <a href="#"class="text-black bi bi-file-earmark-text icono-grande mr-2 text-decoration-none"></i>Reportes</a>
-        <a href="#"class="text-black fas bi bi-geo-alt icono-grande mr-2 text-decoration-none"></i>Municipios</a>
-        <a href="#"class="text-black bi bi-house-door icono-grande mr-2 text-decoration-none"></i>Centros</a>
-        <a href="#"class="text-black bi bi-file-earmark icono-grande mr-2 text-decoration-none"></i>Sedes</a>
-        <a href="#"class="text-black bi bi-clipboard icono-grande mr-2 text-decoration-none"></i>Áreas</a>
-        <div class="mt-auto">
-            <a href="#" class="text-black bi bi-person-circle icono-grande pt-2 text-decoration-none"></i>Perfil</a>
-            <a href="#" class="text-black bi bi-box-arrow-right icono-grande mr-2 text-decoration-none"></i>Cerrar Sesión</a>
-        </div>
-
-        
+            <a href="#"class="text-black bi bi-people icono-grande mr-2 text-decoration-none"></i>Usuarios</a> <!-- span para el espacion entre icono y texto-->
+            <a href="#"class="text-black bi bi-box-seam icono-grande mr-2 text-decoration-none"></i>Elementos</a>
+            <a href="#"class="text-black bi bi-file-earmark-text icono-grande mr-2 text-decoration-none"></i>Reportes</a>
+            <a href="#"class="text-black fas bi bi-geo-alt icono-grande mr-2 text-decoration-none"></i>Municipios</a>
+            <a href="#"class="text-black bi bi-house-door icono-grande mr-2 text-decoration-none"></i>Centros</a>
+            <a href="#"class="text-black bi bi-file-earmark icono-grande mr-2 text-decoration-none"></i>Sedes</a>
+            <a href="#"class="text-black bi bi-clipboard icono-grande mr-2 text-decoration-none"></i>Áreas</a>
+            <div class="mt-auto">
+                <a href="#" class="text-black bi bi-person-circle icono-grande pt-2 text-decoration-none"></i>Perfil</a>
+                <a href="#" class="text-black bi bi-box-arrow-right icono-grande mr-2 text-decoration-none"></i>Cerrar Sesión</a>
+            </div>
     </div>
-
-    <!-- Content Area -->
-    <div class="flex-grow-1">
+     <!-- Content Area -->
+     <div class="flex-grow-1">
         <!-- Topbar -->
         <div class="topbar d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
@@ -60,14 +55,17 @@
                 <i class="text-black bi-bell-fill ms-"></i>
             </div>
         </div>
-
-      
+        
         <div class="container">
             <!-- Aquí va el contenido principal -->
             <div class="titulo">
                 <b>Usuarios registrados</b>
             </div>
             <div class="linea" ></div>
+            <!-- Botones -->
+            <button type="button" class="btn btn-secondary">Agregar usuario <i class="bi bi-person-plus ms-2 fs-6"></i></button>
+            <button type="button" class="btn btn-secondary"><i class="bi bi-filetype-pdf fs-5  ms-2 ms-auto"></i></button>
+            <button type="button" class="btn btn-secondary"><i class="bi bi-printer fs-5 ms-2 ms-auto"></i></button>
             <!--Tabla-->
             <table id="miTabla" class="display">
                 <thead>
@@ -123,11 +121,24 @@
                     </tr>
                 </tbody>
             </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             
-        
-             
-
-
         </div>
     </div>
 </div>
