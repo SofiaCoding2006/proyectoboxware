@@ -37,11 +37,12 @@ h4{
     width: 100%;
     background-color: rgba(0, 153, 15, 1);
     margin-top: 10px;
+    text-decoration: none;
 }
 .container-mt-5 .btn-custom:hover{
     background-color: rgb(25, 185, 41);
-
 }
+
 .card-footer{
     font-size:10px ;
 }
